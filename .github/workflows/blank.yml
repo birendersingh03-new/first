@@ -20,6 +20,7 @@ jobs:
       - name: first step of Job2
         run: echo "first step of Job2"
   third-job:
+    needs: second-job
     runs-on: ubuntu-latest
     steps:
       - name: first step of Job3
