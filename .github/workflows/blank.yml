@@ -23,5 +23,5 @@ jobs:
     steps:
       - name: first step of Job3
         uses : actions/checkout@v6
-      - name: second step of Job3  
+      - name: second step of Job3 echo
         run: ls; pwd
