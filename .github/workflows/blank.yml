@@ -22,4 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first step of Job3
-        run : echo "first step of Job3"
+        uses : actions/checkout@v6
+      - name: second step of Job3  
+        run: ls; pwd
