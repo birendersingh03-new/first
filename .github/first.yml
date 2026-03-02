@@ -1,11 +1,13 @@
 name: First Workflow
-on: Workflow_dispatch
+on: workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
       - name: first step of Job1
-        run: echo "first step of Job1"
+        run: |
+          echo "first step of Job1"
+          echo "first step of Job2"
   second-job:
     runs-on: ubuntu-latest
     steps:
